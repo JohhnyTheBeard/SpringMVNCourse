@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.vazhitelev.springmvncourse"/>
+
+    <context:property-placeholder location="classpath:application.properties"/>
+
+<!--    <bean id="rockMusicBean"-->
+<!--          class="com.vazhitelev.springmvncourse.musictype.RockMusic"-->
+<!--          init-method="doMyInit"-->
+<!--          destroy-method="doMyDestroy"-->
+<!--          factory-method="getRockMusic"-->
+<!--    >-->
+<!--    </bean>-->
+
+<!--    <bean id="classicMusicBean"-->
+<!--          class="com.vazhitelev.springmvncourse.musictype.ClassicMusic">-->
+<!--    </bean>-->
+
+<!--    <bean id="rapMusicBean"-->
+<!--          class="com.vazhitelev.springmvncourse.musictype.RapMusic">-->
+<!--    </bean>-->
+
+<!--    <bean id="musicPlayer"-->
+<!--          class="com.vazhitelev.springmvncourse.musicplayer.MusicPayer"-->
+<!--          scope="prototype">-->
+<!--&lt;!&ndash;        <constructor-arg ref="musicBean"/>&ndash;&gt;-->
+<!--        <property name="music">-->
+<!--            <list value-type="com.vazhitelev.springmvncourse.musictype.Music">-->
+<!--                <ref bean="rockMusicBean"/>-->
+<!--                <ref bean="classicMusicBean"/>-->
+<!--                <ref bean="rapMusicBean"/>-->
+<!--            </list>-->
+<!--        </property>-->
+
+<!--&lt;!&ndash;        <property name="music" ref="musicBean"/>&ndash;&gt;-->
+<!--        <property name="playerName" value="${musicPlayer.playerName}"/>-->
+<!--        <property name="serialNumber" value="${musicPlayer.serialNumber}"/>-->
+<!--    </bean>-->
+
+</beans>
