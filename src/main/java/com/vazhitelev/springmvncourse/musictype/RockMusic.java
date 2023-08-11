@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+//@Component
 public class RockMusic implements Music {
     @Value("#{'${rockMusicList}'.split(',')}")
     private List<String> rockMusicList = new ArrayList<>();
@@ -18,6 +18,7 @@ public class RockMusic implements Music {
     public static RockMusic getRockMusic() {
         return new RockMusic();
     }
+
     @Override
     public String getSong() {
         return name;

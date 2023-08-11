@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+//@Component
 public class ClassicMusic implements Music {
     private String name = "Symphony №3";
     @Value("#{'${classicMusicList}'.split(',')}")

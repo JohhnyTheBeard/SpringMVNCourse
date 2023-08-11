@@ -7,9 +7,9 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.vazhitelev.springmvncourse"/>
+<!--    <context:component-scan base-package="com.vazhitelev.springmvncourse"/>-->
 
-    <context:property-placeholder location="classpath:application.properties"/>
+<!--    <context:property-placeholder location="classpath:application.properties"/>-->
 
 <!--    <bean id="rockMusicBean"-->
 <!--          class="com.vazhitelev.springmvncourse.musictype.RockMusic"-->

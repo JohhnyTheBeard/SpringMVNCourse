@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+//@Component
 public class RapMusic implements Music {
     private String name = "Gangsta's paradise";
     @Value("#{'${rapMusicList}'.split(',')}")
