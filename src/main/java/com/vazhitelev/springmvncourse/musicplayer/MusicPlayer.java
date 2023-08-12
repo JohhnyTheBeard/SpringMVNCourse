@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-@Component
+//@Component
 public class MusicPlayer {
     private Music music1;
     private Music music2;
@@ -30,7 +30,7 @@ public class MusicPlayer {
         this.music2 = music2;
     }
 
-    @Autowired
+//    @Autowired
     public void setMusicList(List<Music> listMusic) {
         this.listMusic = listMusic;
     }
@@ -52,7 +52,7 @@ public class MusicPlayer {
 
 
     public void playMusic() {
-        System.out.println("Сейчас играет: " + music1.getSongs(0) + ", после будет: " + music1.getSongs(1));
+        System.out.println("Сейчас играет: " + music1.getSong() + ", после будет: " + music2.getSong());
     }
     public void playMusicList(){
         for (Music music: listMusic) {
